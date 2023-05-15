@@ -1,8 +1,7 @@
-from django.contrib import admin
-from django.urls import path, include
-
+from django.urls import path
 from mainapp import views
 
 urlpatterns = [
-    path('get-full-db/', views.get_full_db, name='get-full-data')
+    path('get-mastodon/', views.get_mastodon, name='get-mastodon-data'),
+    path('get-state/', views.get_state, name='get-state-data')
 ]

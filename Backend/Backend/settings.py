@@ -81,17 +81,13 @@ password = 'password'
 
 # CouchDB settings
 COUCHDB_DATABASES = {
-    'DB-1': {
-        'URL': f'http://{username}:{password}@172.26.129.1:5984/',
+    'mastodon': {
+        'URL': f'http://{username}:{password}@172.26.132.185:80',
         'NAME': 'mastodon',
     },
-    'DB-2': {
-        'URL': f'http://{username}:{password}@172.26.128.178:5984/',
-        'NAME': 'mastodon',
-    },
-    'DB-3': {
-        'URL': f'http://{username}:{password}@172.26.136.28:5984/',
-        'NAME': 'mastodon',
+    'state': {
+        'URL': f'http://{username}:{password}@172.26.132.185:80',
+        'NAME': 'state',
     },
     # Add more databases as needed
 }
@@ -131,6 +127,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = './'
+ALLOWED_HOSTS = ['*']
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
