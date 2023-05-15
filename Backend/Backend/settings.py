@@ -89,6 +89,10 @@ COUCHDB_DATABASES = {
         'URL': f'http://{username}:{password}@172.26.132.185:80',
         'NAME': 'state',
     },
+    'immigration': {
+        'URL': f'http://{username}:{password}@172.26.132.185:80',
+        'NAME': 'imigration',
+    },
     # Add more databases as needed
 }
 

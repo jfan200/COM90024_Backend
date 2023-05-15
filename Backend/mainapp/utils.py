@@ -19,6 +19,11 @@ def get_state_database():
     return databases
 
 
+def get_state_immigration_database():
+    databases = settings.COUCHDB_DATABASES["immigration"]
+    return databases
+
+
 def check_couchdb_status():
     server_url = settings.COUCHDB_DATABASES["URL"]
     try:
