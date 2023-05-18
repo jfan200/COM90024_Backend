@@ -1,6 +1,9 @@
 # COMP90024ASS2 Backend
 ## Welcome to the Backend project!
 
+Version: 1.0.0, 18 May, 2023
+Contributors: Jinhua Fan, Yuxuan Zeng, Hetong Wang
+
 ### Project Overview
 Backend is a Python-based web application that utilizes the Django framework and CouchDB database to implement functionality. The project aims to provide a scalable and customizable backend solution for building web applications and APIs.
 
